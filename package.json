@@ -6,7 +6,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -15,12 +15,17 @@
   },
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
-    "gatsby": "^2.24.91",
+    "gatsby": "^2.23.3",
     "gatsby-plugin-sass": "^2.3.22",
+    "gatsby-source-filesystem": "^2.4.0",
+    "gatsby-source-graphql": "^2.7.6",
+    "gatsby-transformer-remark": "^2.9.1",
+    "node-gyp-build": "^4.2.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "prettier": "2.1.2"
   },
   "repository": {
