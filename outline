@@ -7,3 +7,40 @@ GOAL 2: Generate the blog post page template
 
 GOAL 3: Generate a new page for each post
 TODO:
+{/* <header className={headerStyle.header}>
+                <h1>
+                    <Link to="/" className={headerStyle.title}>
+                        {data.site.siteMetadata.title}
+                    </Link>
+                </h1>
+                <nav>
+                    <ul className={headerStyle.navList}>
+                        <li><Link className={headerStyle.navItem} activeClassName={headerStyle.activeNavItem} to="/">Home</Link></li>
+                        <li><Link className={headerStyle.navItem} activeClassName={headerStyle.activeNavItem} to="/blog">Blog</Link></li>
+                        <li><Link className={headerStyle.navItem} activeClassName={headerStyle.activeNavItem} to="/about">About</Link></li>
+                        <li><Link className={headerStyle.navItem} activeClassName={headerStyle.activeNavItem} to="/contact">Contact</Link></li>
+                    </ul>
+                </nav>
+            </header> */}
+
+
+
+
+
+
+
+            <nav className="navbar navbar-expand-lg bg-dark" >
+                <Link className="navbar-brand brand" to="/">{`{` + data.site.siteMetadata.title + `}`}</Link>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div className="navbar-nav">
+                        <Link className="nav-item nav-link link" to="/" >Home</Link>
+                        <Link className="nav-item nav-link link" to="/blog">Blog</Link>
+                        <Link className="nav-item nav-link link" to="/about">About</Link>
+                        <Link className="nav-item nav-link link" to="/contact">Contact</Link>c
+
+                    </div>
+                </div>
+            </nav>

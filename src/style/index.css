@@ -619,4 +619,16 @@ html {
     html {
       font-size: 100%;
     }
-  }
+  } 
+
+.index{
+  margin-top:70px;
+}
+.name{
+  text-align: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+body{
+  background-color:#fff;
+}
